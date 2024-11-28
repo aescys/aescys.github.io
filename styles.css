@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(21, 17, 32);
+}
+h1, h2 {
+    padding-left: 50px;
+    color:rgb(26, 189, 26);
+}
+
+/* menubar styling */
+#title_bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center; 
+    gap: 0px;
+    background-color: rgb(15, 12, 23);
+    color: rgb(26, 189, 26);
+    padding: 0px 50px;
+    margin: 12px 0px;
+}
+.hidden {
+    display: none !important;
+}
+.tab {
+    padding: 0px 80px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+a.title_tab{
+    text-decoration: none;
+}
+.title_tab {
+    color:rgb(26, 189, 26);
+}
+.title_tab:visited {
+    color:rgb(26, 189, 26);
+}
+.title_tab:hover {
+    text-decoration: underline;
+    background-color: rgb(21, 17, 32);
+    color:rgb(18, 182, 18);
+}
