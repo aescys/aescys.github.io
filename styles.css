@@ -1,43 +1,47 @@
 body {
     background-color: rgb(21, 17, 32);
 }
-h1, h2 {
+.mouse_track {
     padding-left: 50px;
     color:rgb(26, 189, 26);
 }
 
 /* menubar styling */
 #title_bar {
+    box-sizing: border-box;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
-    align-items: center; 
-    gap: 0px;
+    margin: 12px auto;
+    padding: 2px 0px;
     background-color: rgb(15, 12, 23);
     color: rgb(26, 189, 26);
-    padding: 0px 50px;
-    margin: 12px 0px;
+    border-radius: 7px;
 }
 .hidden {
     display: none !important;
 }
 .tab {
-    padding: 0px 80px;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
+    box-sizing: border-box;
+    padding: 12px 3em;
+    margin: 5px 2px;
+    border: 2px dashed rgb(26, 189, 26);
+    text-align: center;
 }
-a.title_tab{
+.tab:hover {
+    background-color: rgb(38, 31, 54)
+}
+.tab_link {
+    color:rgb(26, 189, 26);
     text-decoration: none;
+    text-align: center;
 }
-.title_tab {
+.tab_link:visited {
     color:rgb(26, 189, 26);
 }
-.title_tab:visited {
-    color:rgb(26, 189, 26);
-}
-.title_tab:hover {
-    text-decoration: underline;
-    background-color: rgb(21, 17, 32);
+.tab_link:hover {
+    border-bottom: 2px dashed rgb(92, 10, 192);
+    border-radius: 1px;
     color:rgb(18, 182, 18);
 }

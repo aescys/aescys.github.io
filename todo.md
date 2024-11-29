@@ -1,0 +1,1 @@
+work on website functionality for cell devices, first step make the menubar scale and find a way to convert the menubar hide feature into a seamless method for phones
