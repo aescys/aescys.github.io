@@ -4,7 +4,7 @@ document.addEventListener('mousemove', menubarVisibility);
 
 function menubarVisibility(event) {
     let menuBar = document.getElementById("title_bar");
-    if (event.clientY >= 100) {
+    if (event.clientY > (window.innerHeight * .15)) {
         menuBar.classList.add("hidden");
     }
     else {
@@ -12,6 +12,7 @@ function menubarVisibility(event) {
     }
 }
 
+//TAB CLICK REDIRECT BACKEND
 document.addEventListener('click', executeLink);
 
 function executeLink(event) {

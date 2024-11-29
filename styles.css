@@ -12,7 +12,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
+    width: 95vw;
+    height: calc(4vw + 67);
     margin: 12px auto;
     padding: 2px 0px;
     background-color: rgb(15, 12, 23);
@@ -24,10 +25,17 @@ body {
 }
 .tab {
     box-sizing: border-box;
-    padding: 12px 3em;
-    margin: 5px 2px;
-    border: 2px dashed rgb(26, 189, 26);
+    width: 24%;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+    margin: 7px 0px;
+    border: 1px dashed rgb(26, 189, 26);
     text-align: center;
+}
+.tab_content {
+    font-size: 3vw;
+    background-color: crimson;
 }
 .tab:hover {
     background-color: rgb(38, 31, 54)
@@ -41,7 +49,7 @@ body {
     color:rgb(26, 189, 26);
 }
 .tab_link:hover {
-    border-bottom: 2px dashed rgb(92, 10, 192);
+    border-bottom: 2px dashed rgb(255, 166, 0);
     border-radius: 1px;
     color:rgb(18, 182, 18);
 }
