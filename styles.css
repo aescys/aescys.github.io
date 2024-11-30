@@ -1,18 +1,40 @@
 body {
-    background-color: rgb(21, 17, 32);
-}
-.mouse_track {
-    padding-left: 50px;
-    color:rgb(26, 189, 26);
+    background-color: rgb(22, 17, 34);
 }
 
+main {
+    background-color: rgb(25, 20, 39);
+}
+
+/* CONTENT BACKDROP STYLING */
+#content_backdrop {
+    box-sizing: border-box;
+    display: block;
+    justify-content: center;
+    justify-self: center;
+    width: 94vw;
+    height: 96%;
+    margin-top: 4vh;
+    padding: 1vh 3vw;
+    border-radius: 7px;
+    background-color: rgb(21, 16, 31);
+}
+
+#top_spacer {
+    height: 9vh;
+}
 /* menubar styling */
 #title_bar {
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 1vw;
+    right: 1vw;
+    top: 0px;
     justify-content: center;
     flex-direction: row;
-    width: 95vw;
+    width: 98vw;
     height: calc(4vw + 67);
     margin: 12px auto;
     padding: 2px 0px;
@@ -25,21 +47,23 @@ body {
 }
 .tab {
     box-sizing: border-box;
+    display: flex;
     width: 24%;
     height: 85%;
     justify-content: center;
     align-items: center;
     margin: 7px 0px;
-    border: 1px dashed rgb(26, 189, 26);
+    border: 2px solid rgb(26, 189, 26);
     text-align: center;
 }
 .tab_content {
     justify-self: center;
+    text-align: center;
     width: 60%;
     font-size: 3vw;
 }
 .tab:hover {
-    background-color: rgb(38, 31, 54)
+    background-color: rgb(32, 20, 62)
 }
 .tab_link {
     color:rgb(26, 189, 26);
@@ -53,4 +77,21 @@ body {
     border-bottom: 2px dashed rgb(255, 166, 0);
     border-radius: 1px;
     color:rgb(18, 182, 18);
+}
+
+/* CONTENT_DIV STYLING */
+.content_div {
+    display: inline-block;
+    width: 75vw;
+    height: 40vh;
+    margin: 1vh auto;
+    padding: 1vh 2vw;
+    background-color: rgb(25, 20, 39);
+    border: 1px dashed rgb(26, 189, 26);
+    border-radius: 7px;
+}
+
+/* mouse_tracker */
+.mouse_track {
+    color:rgb(26, 189, 26);
 }
