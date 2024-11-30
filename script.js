@@ -17,7 +17,6 @@ document.addEventListener('click', executeLink);
 
 function executeLink(event) {
     let elementClicked = event.target;
-
     if (elementClicked.id == "news") {
         window.location.href = "index.html";
     }
@@ -42,6 +41,14 @@ function executeLink(event) {
     else if (elementClicked.id == "comical_dude_content") {
         window.location.href = "cdude.html";
     }
+}
+
+//CONTENT_DIV CLICK-TOGGLE-ENLARGE BACKEND
+querySelectAll(".content_div").addEventListener('click', toggleEnlarge);
+
+function toggleEnlarge(event) {
+    event.target.classList.toggle('enlarged');
+    
 }
 
 //MOUSE TRACKER BACKEND

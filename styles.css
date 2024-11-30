@@ -9,13 +9,15 @@ main {
 /* CONTENT BACKDROP STYLING */
 #content_backdrop {
     box-sizing: border-box;
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    justify-self: center;
+    align-items: center;
     width: 94vw;
     height: 96%;
-    margin-top: 4vh;
-    padding: 1vh 3vw;
+    margin: 0vh 2vw;
+    margin-top: 5vh;
+    padding: 1vh 0vh;
     border-radius: 7px;
     background-color: rgb(21, 16, 31);
 }
@@ -56,6 +58,14 @@ main {
     border: 2px solid rgb(26, 189, 26);
     text-align: center;
 }
+    /* accounting for doubled up middle tab separators */
+#news {
+    border-left: 4px solid rgb(26, 189, 26);
+}
+#comical_dude {
+    border-right: 4px solid rgb(26, 189, 26);
+}
+    /* back to formatting */
 .tab_content {
     justify-self: center;
     text-align: center;
@@ -74,21 +84,26 @@ main {
     color:rgb(26, 189, 26);
 }
 .tab_link:hover {
-    border-bottom: 2px dashed rgb(255, 166, 0);
+    border-bottom: 2px dashed rgb(104, 5, 251);
     border-radius: 1px;
     color:rgb(18, 182, 18);
 }
 
 /* CONTENT_DIV STYLING */
 .content_div {
-    display: inline-block;
-    width: 75vw;
-    height: 40vh;
-    margin: 1vh auto;
+    display: flex;
+    flex-direction: column;
+    width: 66vw;
+    height: 54vh;
+    margin: 1vh 3vw;
     padding: 1vh 2vw;
     background-color: rgb(25, 20, 39);
-    border: 1px dashed rgb(26, 189, 26);
+    border: 2px dashed rgb(26, 189, 26);
     border-radius: 7px;
+}
+.content_div:hover {
+    width: 68vw;
+    height: 56vh;
 }
 
 /* mouse_tracker */
