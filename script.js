@@ -13,41 +13,35 @@ function menubarVisibility(event) {
 }
 
 //TAB CLICK REDIRECT BACKEND
-document.addEventListener('click', executeLink);
+document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', executeLink)
+});
+
 
 function executeLink(event) {
-    let elementClicked = event.target;
-    if (elementClicked.id == "news") {
+    let tabClicked = event.currentTarget;
+    if (tabClicked.id == "news") {
         window.location.href = "index.html";
     }
-    else if (elementClicked.id == "news_content") {
-        window.location.href = "index.html";
-    }
-    else if (elementClicked.id == "funct_display") {
+    else if (tabClicked.id == "funct_display") {
         window.location.href = "code.html";
     }
-    else if (elementClicked.id == "funct_display_content") {
-        window.location.href = "code.html";
-    }
-    else if (elementClicked.id == "math_highlight") {
+    else if (tabClicked.id == "math_highlight") {
         window.location.href = "math.html";
     }
-    else if (elementClicked.id == "math_highlight_content") {
-        window.location.href = "math.html";
-    }
-    else if (elementClicked.id == "comical_dude") {
-        window.location.href = "cdude.html";
-    }
-    else if (elementClicked.id == "comical_dude_content") {
+    else if (tabClicked.id == "comical_dude") {
         window.location.href = "cdude.html";
     }
 }
 
 //CONTENT_DIV CLICK-TOGGLE-ENLARGE BACKEND
-querySelectAll(".content_div").addEventListener('click', toggleEnlarge);
+
+document.querySelectorAll('.content_div').forEach(div => {
+    div.addEventListener('click', toggleEnlarge)
+});
 
 function toggleEnlarge(event) {
-    event.target.classList.toggle('enlarged');
+    event.currentTarget.classList.toggle('enlarged');
     
 }
 

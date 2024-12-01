@@ -1,11 +1,13 @@
-center the (.content_div)'s in the #content_backdrop
+# main
+work on the bottom edge where main meets footer and how the overlay between main and .content_backdrop looks
 
-refine the top and bottom edges of the site, currently sharp flat cutoff where body meets start of main, add footer round off and gap the transition area
+# content_div
+tweak the content_div enlarging feature. Id like it to work so that when unenlarged, the content that would be in the article is confined to the dimensions of the content div, and that when clicked the content div height expands to display the article in full, until clicked again
 
-figure out why the content divs having different margin spacing in index.html than they do in the other 3 tabs
+# footer
+figure out how to make it display the same as the main element, same width
 
+give it its own version of .content_backdrop within to match the styling of the main element
 
 # menubar
-try to clean up the appearance, currently the middle dividers are double thick due to how the individual-tab-border approach
-
 declare a suitable conversion for the hide tab bar feature on mobile devices

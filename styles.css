@@ -1,9 +1,14 @@
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(22, 17, 34);
 }
 
 main {
     background-color: rgb(25, 20, 39);
+    padding-bottom: 15px;
+    border-radius: 12px;
 }
 
 /* CONTENT BACKDROP STYLING */
@@ -18,7 +23,7 @@ main {
     margin: 0vh 2vw;
     margin-top: 5vh;
     padding: 1vh 0vh;
-    border-radius: 7px;
+    border-radius: 12px;
     background-color: rgb(21, 16, 31);
 }
 
@@ -42,7 +47,7 @@ main {
     padding: 2px 0px;
     background-color: rgb(15, 12, 23);
     color: rgb(26, 189, 26);
-    border-radius: 7px;
+    border-radius: 12px;
 }
 .hidden {
     display: none !important;
@@ -99,14 +104,29 @@ main {
     padding: 1vh 2vw;
     background-color: rgb(25, 20, 39);
     border: 2px dashed rgb(26, 189, 26);
-    border-radius: 7px;
+    border-radius: 12px;
+}
+.enlarged {
+    width: 68vw; 
+    height: 74vh;
 }
 .content_div:hover {
     width: 68vw;
     height: 56vh;
 }
-
+.content_div.enlarged:hover {
+    width: 68vw; 
+    height: 74vh;
+}
 /* mouse_tracker */
 .mouse_track {
     color:rgb(26, 189, 26);
+}
+
+footer {
+    margin: 2vh 0vw;
+    width: 98vw;
+    height: 250px;
+    background-color: rgb(25, 20, 39);
+    border-radius: 12px;
 }
