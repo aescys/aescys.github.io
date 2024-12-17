@@ -1,3 +1,4 @@
+//SITE-WIDE JS IMPLEMENTAIONS
 
 //MENU BAR TOGGLE BACKEND
 document.addEventListener('mousemove', menubarVisibility);
@@ -16,7 +17,6 @@ function menubarVisibility(event) {
 document.querySelectorAll('.tab').forEach(tab => {
     tab.addEventListener('click', executeLink)
 });
-
 
 function executeLink(event) {
     let tabClicked = event.currentTarget;
@@ -44,11 +44,3 @@ function toggleEnlarge(event) {
     event.currentTarget.classList.toggle('enlarged');
     
 }
-
-//MOUSE TRACKER BACKEND
-document.addEventListener('mousemove', function(event) {
-    let xStatement = document.querySelector("#xCoord");
-    let yStatement = document.querySelector("#yCoord");
-    xStatement.textContent = `X Pos: ${event.clientX}`;
-    yStatement.textContent = `Y Pos: ${event.clientY}`;
-});

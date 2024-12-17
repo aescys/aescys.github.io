@@ -118,6 +118,12 @@ main {
     width: 68vw; 
     height: 74vh;
 }
+.content_div h1 {
+    color: rgb(255, 255, 255);
+}
+.content_div p {
+    color: rgb(232, 228, 228);
+}
 /* mouse_tracker */
 .mouse_track {
     color:rgb(26, 189, 26);
