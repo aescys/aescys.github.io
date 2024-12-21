@@ -1,53 +1,52 @@
+/* SOURCE DEPENDENCIES */
+    /* regular font */
+@font-face {
+    font-family: 'Fira Code';
+    src: url('fonts/FiraCode-Regular.woff') format('woff');
+    src: url('fonts/FiraCode-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+    /* medium font */
+@font-face {
+    font-family: 'Fira Code';
+    src: url('fonts/FiraCode-Medium.woff') format('woff');
+    src: url('fonts/FiraCode-Medium.woff') format('woff2');
+    font-weight: 500;
+}
+
+/* SITE WIDE */
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(22, 17, 34);
+    background-color: rgb(14, 10, 20);
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
 }
-
 main {
     background-color: rgb(25, 20, 39);
     padding-bottom: 15px;
-    border-radius: 12px;
+    border-radius: 3px;
 }
-
-/* CONTENT BACKDROP STYLING */
-#content_backdrop {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 94vw;
-    height: 96%;
-    margin: 0vh 2vw;
-    margin-top: 5vh;
-    padding: 1vh 0vh;
-    border-radius: 12px;
-    background-color: rgb(21, 16, 31);
-}
-
 #top_spacer {
     height: 9vh;
 }
-/* menubar styling */
+    /* Menubar */
 #title_bar {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: 1vw;
-    right: 1vw;
-    top: 0px;
+    top: 0vh;
     justify-content: center;
     flex-direction: row;
-    width: 98vw;
+    width: 96vw;
     height: calc(4vw + 67);
     margin: 12px auto;
     padding: 2px 0px;
     background-color: rgb(15, 12, 23);
     color: rgb(26, 189, 26);
-    border-radius: 12px;
+    border-radius: 3px;
 }
 .hidden {
     display: none !important;
@@ -63,14 +62,14 @@ main {
     border: 2px solid rgb(26, 189, 26);
     text-align: center;
 }
-    /* accounting for doubled up middle tab separators */
+        /* accounting for doubled up middle tab separators */
 #news {
     border-left: 4px solid rgb(26, 189, 26);
 }
 #comical_dude {
     border-right: 4px solid rgb(26, 189, 26);
 }
-    /* back to formatting */
+        /* back to formatting */
 .tab_content {
     justify-self: center;
     text-align: center;
@@ -78,7 +77,7 @@ main {
     font-size: 3vw;
 }
 .tab:hover {
-    background-color: rgb(32, 20, 62)
+    background-color: rgba(38, 1, 79, 0.371);
 }
 .tab_link {
     color:rgb(26, 189, 26);
@@ -94,17 +93,42 @@ main {
     color:rgb(18, 182, 18);
 }
 
-/* CONTENT_DIV STYLING */
-.content_div {
+    /* content backdrop */
+#content_backdrop {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 94vw;
+    height: 96%;
+    margin: 0vh 2vw;
+    margin-top: 5vh;
+    padding: 1vh 0vh;
+    border-radius: 3px;
+    background-color: rgb(18, 13, 26);
+}
+    /* footer */
+footer {
+    margin: 2vh 0vw;
+    width: 98vw;
+    height: 250px;
+    background-color: rgb(25, 20, 39);
+    border-radius: 3px;
+}
+
+    /* content div */
+.content_div {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(20, 1fr);
     width: 66vw;
     height: 54vh;
     margin: 1vh 3vw;
     padding: 1vh 2vw;
     background-color: rgb(25, 20, 39);
     border: 2px dashed rgb(26, 189, 26);
-    border-radius: 12px;
+    border-radius: 3px;
 }
 .enlarged {
     width: 68vw; 
@@ -124,15 +148,59 @@ main {
 .content_div p {
     color: rgb(232, 228, 228);
 }
-/* mouse_tracker */
-.mouse_track {
+        /* subject */
+.subject {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    align-self: center;
+}
+        /* descriptor */
+.descriptor {
+    grid-column-start: 9;
+    grid-column-end: 20;
+    grid-row-start: 3;
+    grid-row-end: 9;
+    align-self: center;
+}
+    /* a elements */
+a {
+    color: rgb(26, 189, 26);
+}
+a:visited {
+    color: rgb(26, 189, 26);
+}
+a:hover {
+    color: rgb(26, 189, 26);
+    border-bottom: 1px solid rgb(26, 189, 26);
+}
+/*INDEX.HTML SPECIFIC */
+
+/* CODE.HTML SPECIFIC */
+.function_display {
+    justify-self: center;
+    align-self: center;
+    background-color: rgb(16, 12, 24);
+    margin-right: 0.5vw;
+    padding: 1vh 2vw;
+    border: 2px solid rgb(11, 8, 17);
+    border-radius: 3px;
     color:rgb(26, 189, 26);
 }
-
-footer {
-    margin: 2vh 0vw;
-    width: 98vw;
-    height: 250px;
-    background-color: rgb(25, 20, 39);
-    border-radius: 12px;
+.function_display h1 {
+    color: rgb(255, 255, 255);
 }
+.function_description {
+    justify-self: center;
+    align-self: center;
+    background-color: rgb(16, 12, 24);
+    margin-left: 0.5vw;
+    padding: 1vh 2vw;
+    border: 2px solid rgb(11, 8, 17);
+    border-radius: 3px;
+}
+
+/* MATH.HTML SPECIFIC */
+
+/*CDUDE.HTML SPECIFIC */
