@@ -120,6 +120,7 @@ footer {
     /* content div */
 .content_div {
     display: grid;
+    overflow: scroll;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(20, 1fr);
     width: 66vw;
