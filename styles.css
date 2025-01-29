@@ -156,6 +156,7 @@ footer {
     grid-row-start: 4;
     grid-row-end: 8;
     align-self: center;
+    font-size: calc(1vw + 1vh);
 }
         /* descriptor */
 .descriptor {
@@ -164,6 +165,7 @@ footer {
     grid-row-start: 3;
     grid-row-end: 9;
     align-self: center;
+    font-size: calc(1vw + 1vh);
 }
     /* a elements */
 a {
