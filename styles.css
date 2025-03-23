@@ -48,9 +48,11 @@ main {
     color: rgb(26, 189, 26);
     border-radius: 3px;
 }
+/* Commenting out the hiding feature for now, testing how the site looks without it
 .hidden {
     display: none !important;
 }
+*/
 .tab {
     box-sizing: border-box;
     display: flex;
@@ -148,6 +150,9 @@ footer {
 }
 .content_div p {
     color: rgb(232, 228, 228);
+}
+.content_div li {
+    color: white;
 }
         /* subject */
 .subject {
