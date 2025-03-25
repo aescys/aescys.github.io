@@ -18,7 +18,7 @@ declare a suitable conversion for the hide tab bar feature on mobile devices
 # <span style="color: maroon">Index</span>
 
 # <span style="color: green">Code</span>
-begin carving out a format for the function displays to follow, practice with Mouse Tracker
+ begin carving out a format for the function displays to follow, practice with Mouse Tracker
  ### Key Points
   - Contain a live visual demonstration of the function being displayed
   - Contain a brief description of the function and what is does
@@ -27,3 +27,6 @@ begin carving out a format for the function displays to follow, practice with Mo
 # <span style="color: blue">Math</span>
 
 # <span style="color: purple">Cdude</span>
+ - experiment with using buttons to create the tab system for the comical dude version selectors, this could possibly decrease the complexity of the site wide titlebar
+ - implement the comic version selectors fully so that clicking on one selector or another shows the respective comic
+    - do so without creating seperate pages for each comic
