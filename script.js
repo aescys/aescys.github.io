@@ -44,3 +44,6 @@ function toggleEnlarge(event) {
     event.currentTarget.classList.toggle('enlarged');
     
 }
+
+//CDude comic_version_selector 
+//CDude content display feature

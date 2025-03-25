@@ -33,9 +33,7 @@ main {
 }
     /* Menubar */
 #title_bar {
-    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
     position: fixed;
     top: 0vh;
     justify-content: center;
@@ -213,3 +211,23 @@ a:hover {
 
 /*CDUDE.HTML SPECIFIC */
 
+.cdude_select_menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 12px auto;
+    padding: 2px 0px;
+    background-color: rgb(15, 12, 23);
+    color: rgb(26, 189, 26);
+    border-radius: 3px;
+}
+
+.comic_version_tab_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px 5px;
+    padding: 10px;
+    border: 2px solid rgb(26, 189, 26);
+    text-align: center;
+}
