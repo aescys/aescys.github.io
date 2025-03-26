@@ -17,6 +17,8 @@
 
  add a feature that shrinks the menubar when the page is scrolled down, but keeps the menubar fixed and visible still
 
+ fix up the design, the dynamic sizing is totally off, and a pain, I know
+
 # <span style="color: maroon">Index</span>
 
 # <span style="color: green">Code</span>
@@ -32,3 +34,6 @@
  - experiment with using buttons to create the tab system for the comical dude version selectors, this could possibly decrease the complexity of the site wide titlebar
  - implement the comic version selectors fully so that clicking on one selector or another shows the respective comic
     - do so without creating seperate pages for each comic
+
+ - gear up Mk1 for launch, f it we ball dude 0o0, 
+    - add a references list at the end of the document, then, upload it. Put it in da folder.

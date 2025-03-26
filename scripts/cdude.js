@@ -10,8 +10,8 @@ function loadComic(event) {
     let comicSelected = event.currentTarget;
     if (comicSelected.id == "ComicalDudeMk1") {
         pdfLocation = "content/cdude/ComicalDudeMk1.pdf";
-        window.innerHTML = `
-            <iframe src="${pdfUrl}" width="100%" height="100%" style="border: none;"></iframe>
-        `;
     }
+    window.innerHTML = `
+            <iframe src="${pdfLocation}" width="100%" height="100%" style="border: none;"></iframe>
+        `;
 }
