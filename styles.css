@@ -229,3 +229,21 @@ a:hover {
     border: 2px solid rgb(26, 189, 26);
     text-align: center;
 }
+
+.comic_version_tab:hover {
+    background-color: rgba(38, 1, 79, 0.371);
+}
+
+.comic_link {
+    color:rgb(26, 189, 26);
+    text-decoration: none;
+    text-align: center;
+}
+.comic_link:visited {
+    color:rgb(26, 189, 26);
+}
+.comic_link:hover {
+    border-bottom: 2px dashed rgb(104, 5, 251);
+    border-radius: 1px;
+    color:rgb(18, 182, 18);
+}
