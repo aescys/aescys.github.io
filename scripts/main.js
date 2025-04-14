@@ -1,15 +1,26 @@
 //SITE-WIDE JS IMPLEMENTAIONS
 
 
-//MOBILE DROPDOWN TAB BACKEND
-document.getElementById("menu_bar").classList.add("hidden");
+//MOBILE DROPDOWN TAB BACKEND  *gpt developed :\ I like to have more personal effort but it got late, maybe rework it or recode it on spare time. This was a quick fix solution.
+function updateMenuBarVisibility() {
+    const menuBar = document.getElementById("menu_bar");
 
-document.getElementById("mobile_menu_dropdown").addEventListener('click', menubarVisibility);
-
-function menubarVisibility(event) {
-    let menuBar = document.getElementById("menu_bar");
-    menuBar.classList.toggle("hidden");
+    if (window.innerWidth < 768) {
+        menuBar.classList.add("hidden")
+    } else {
+        menuBar.classList.remove("hidden");
+    }
 }
+
+updateMenuBarVisibility();
+
+window.addEventListener('resize', updateMenuBarVisibility);
+
+document.getElementById("mobile_menu_dropdown").addEventListener('click', function () {
+    if (window.innerWidth < 768) {
+        document.getElementById("menu_bar").classList.toggle("hidden");
+    }
+});
 
 //TAB CLICK REDIRECT BACKEND
 document.querySelectorAll('.tab').forEach(tab => {
