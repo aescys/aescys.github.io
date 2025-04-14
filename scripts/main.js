@@ -1,16 +1,14 @@
 //SITE-WIDE JS IMPLEMENTAIONS
 
-//MENU BAR TOGGLE BACKEND
-document.addEventListener('mousemove', menubarVisibility);
+
+//MOBILE DROPDOWN TAB BACKEND
+document.getElementById("menu_bar").classList.add("hidden");
+
+document.getElementById("mobile_menu_dropdown").addEventListener('click', menubarVisibility);
 
 function menubarVisibility(event) {
-    let menuBar = document.getElementById("title_bar");
-    if (event.clientY > (window.innerHeight * .15)) {
-        menuBar.classList.add("hidden");
-    }
-    else {
-        menuBar.classList.remove("hidden");
-    }
+    let menuBar = document.getElementById("menu_bar");
+    menuBar.classList.toggle("hidden");
 }
 
 //TAB CLICK REDIRECT BACKEND
