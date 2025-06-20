@@ -1,0 +1,237 @@
+/* SOURCE DEPENDENCIES */
+    /* regular font */
+@font-face {
+    font-family: 'Fira Code';
+    src: url('fonts/FiraCode-Regular.woff') format('woff');
+    src: url('fonts/FiraCode-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+    /* medium font */
+@font-face {
+    font-family: 'Fira Code';
+    src: url('fonts/FiraCode-Medium.woff') format('woff');
+    src: url('fonts/FiraCode-Medium.woff') format('woff2');
+    font-weight: 500;
+}
+
+
+
+/* SITE WIDE */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(14, 10, 20);
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+}
+main {
+    background-color: rgb(25, 20, 39);
+    padding-bottom: 15px;
+    border-radius: 3px;
+}
+#top_spacer {
+    height: 17vh;
+}
+
+
+/* Menubar */
+#menu_bar {
+    display: flex;
+    position: fixed;
+    top: 0vh;
+    justify-content: center;
+    flex-direction: row;
+    width: 96vw;
+    height: calc(4vw + 67);
+    margin: 12px auto;
+    padding: 2px 0px;
+    background-color: rgb(15, 12, 23);
+    color: rgb(26, 189, 26);
+    border-radius: 3px;
+}
+.hidden {
+    display: none !important;
+}
+.tab {
+    box-sizing: border-box;
+    display: flex;
+    width: 24%;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+    margin: 7px 0px;
+    border: 2px solid rgb(26, 189, 26);
+    text-align: center;
+}
+        /* accounting for doubled up middle tab separators */
+#news {
+    border-left: 4px solid rgb(26, 189, 26);
+}
+#comical_dude {
+    border-right: 4px solid rgb(26, 189, 26);
+}
+        /* back to formatting */
+.tab_content {
+    justify-self: center;
+    text-align: center;
+    width: 60%;
+    font-size: 3vw;
+}
+.tab:hover {
+    background-color: rgba(38, 1, 79, 0.371);
+}
+.tab_link {
+    color:rgb(26, 189, 26);
+    text-decoration: none;
+    text-align: center;
+}
+.tab_link:visited {
+    color:rgb(26, 189, 26);
+}
+.tab_link:hover {
+    border-bottom: 2px dashed rgb(104, 5, 251);
+    border-radius: 1px;
+    color:rgb(18, 182, 18);
+}
+.mobile_only {
+    display: none;
+}
+
+
+
+/* content backdrop */
+#content_backdrop {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 94vw;
+    height: 96%;
+    margin: 0vh 2vw;
+    margin-top: 5vh;
+    padding: 1vh 0vh;
+    border-radius: 3px;
+    background-color: rgb(18, 13, 26);
+}
+
+
+    /* footer */
+footer {
+    margin: 2vh 0vw;
+    width: 98vw;
+    height: 250px;
+    background-color: rgb(25, 20, 39);
+    border-radius: 3px;
+}
+
+
+    /* content div */
+.content_div {
+    display: grid;
+    overflow: scroll;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    width: 66vw;
+    height: 54vh;
+    margin: 1vh 3vw;
+    padding: 1vh 2vw;
+    background-color: rgb(25, 20, 39);
+    border: 2px dashed rgb(26, 189, 26);
+    border-radius: 3px;
+}
+.enlarged {
+    width: 68vw; 
+    height: 74vh;
+}
+.content_div:hover {
+    width: 68vw;
+    height: 56vh;
+}
+.content_div.enlarged:hover {
+    width: 68vw; 
+    height: 74vh;
+}
+.content_div h1 {
+    color: rgb(255, 255, 255);
+}
+.content_div p {
+    color: rgb(232, 228, 228);
+}
+.content_div li {
+    color: white;
+}
+        /* subject */
+.subject {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    align-self: center;
+    font-size: calc(1vw + 1vh);
+}
+        /* descriptor */
+.descriptor {
+    grid-column-start: 9;
+    grid-column-end: 20;
+    grid-row-start: 3;
+    grid-row-end: 9;
+    align-self: center;
+    font-size: calc(1vw + 1vh);
+}
+    /* a elements */
+a {
+    color: rgb(26, 189, 26);
+}
+a:visited {
+    color: rgb(26, 189, 26);
+}
+a:hover {
+    color: rgb(26, 189, 26);
+    border-bottom: 1px solid rgb(26, 189, 26);
+}
+
+
+
+
+/* Mobile Dev */
+@media screen and (max-width: 768px) {
+    .mobile_only {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+        background-color: rgb(26, 189, 26);
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #menu_bar {
+        align-self: flex-start;
+        flex-direction: column;
+        width: 60vw;
+        height: auto;
+        padding: 8px 0;
+        margin: 0 0 0 0;
+    }
+
+    .tab {
+        width: 90%;
+        height: auto;
+        margin: 6px 0;
+        padding: 8px;
+    }
+
+    .tab_content {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    #top_spacer {
+        display: none;
+    }
+}

@@ -7,6 +7,8 @@
 ### content_div
  tweak the content_div enlarging feature. Id like it to work so that when unenlarged, the content that would be in the article is confined to the dimensions of the content div, and that when clicked the content div height expands to display the article in full, until clicked again
 
+ for some reason if the content is long enough to be scrollable, the top line of the div only displays when the div enlarges. See intro div on index.html
+
 ### footer
  figure out how to make it display the same as the main element, same width
 
