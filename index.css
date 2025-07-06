@@ -1,4 +1,112 @@
 /*INDEX.HTML SPECIFIC */
-#italicized {
+
+#intro {
+    margin: 2em;
+    color: rgb(255, 255, 255);
+}
+#emphasized {
+    color: rgb(26, 189, 26);
     font-style: italic;
+    text-decoration: none;
+}
+#emphasized:visited {
+    color: rgb(26, 189, 26);
+}
+#emphasized:hover {
+    text-decoration-color: rgb(26, 189, 26);
+    text-decoration: underline;
+    text-decoration-style: bold;
+    text-underline-offset: 6px;
+}
+#emphasized-bold {
+    color: rgb(26, 189, 26);
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+}
+#emphasized-bold:visited {
+    color: rgb(26, 189, 26);
+}
+#emphasized-bold:hover {
+    text-decoration-color: rgb(26, 189, 26);
+    text-decoration: underline;
+    text-decoration-style: bold;
+    text-underline-offset: 6px;
+}
+#welcome {
+    color: rgb(26, 189, 26);
+    text-decoration: none;
+}
+#welcome:visited {
+    color: rgb(26, 189, 26);
+}
+#welcome:hover {
+    text-decoration: none !important;
+}
+#emphasized_pink {
+    color: rgb(255, 0, 217);
+}
+#emphasized_pink:visited {
+    color: rgb(255, 0, 217);
+}
+#emphasized_pink:hover {
+    color: rgb(255, 0, 217);
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 3px;
+    border-bottom: none !important;
+}
+#engineer {
+    color: rgb(32, 163, 215);
+    text-decoration: none;
+}
+#engineer:visited {
+    color: rgb(32, 163, 215);
+}
+#engineer:hover {
+    text-decoration: none !important;
+}
+#near {
+    color: rgb(220, 80, 80);
+    text-decoration: none;
+}
+#near:visited {
+    color: rgb(220, 80, 80);
+}
+#near:hover {
+    text-decoration: none !important;
+}
+#cha-ching {
+    color: rgb(240, 228, 97);
+    text-decoration: none;
+}
+#cha-ching:visited {
+    color: rrgb(240, 228, 97);
+}
+#cha-ching:hover {
+    text-decoration: none !important;
+}
+#spacer {
+    height: 10px;
+}
+#top_entry {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    width: 66vw;
+    height: 54vh;
+    margin: 1vh 3vw;
+    padding: 1vh 2vw;
+    background-color: rgb(25, 20, 39);
+    border: 2px dashed rgb(26, 189, 26);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+}
+#head {
+    align-self: center;
+    font-size: calc(1vw + 1vh);
+}
+#top_spacer {
+    height: 4em;
 }

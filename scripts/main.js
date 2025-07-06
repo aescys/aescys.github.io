@@ -17,9 +17,7 @@ updateMenuBarVisibility();
 window.addEventListener('resize', updateMenuBarVisibility);
 
 document.getElementById("mobile_menu_dropdown").addEventListener('click', function () {
-    if (window.innerWidth < 768) {
-        document.getElementById("menu_bar").classList.toggle("hidden");
-    }
+    document.getElementById("menu_bar").classList.toggle("hidden");
 });
 
 //TAB CLICK REDIRECT BACKEND
@@ -38,8 +36,8 @@ function executeLink(event) {
     else if (tabClicked.id == "math_highlight") {
         window.location.href = "math.html";
     }
-    else if (tabClicked.id == "comical_dude") {
-        window.location.href = "cdude.html";
+    else if (tabClicked.id == "comic") {
+        window.location.href = "comic.html";
     }
 }
 

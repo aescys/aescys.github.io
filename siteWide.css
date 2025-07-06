@@ -34,72 +34,6 @@ main {
     height: 17vh;
 }
 
-
-/* Menubar */
-#menu_bar {
-    display: flex;
-    position: fixed;
-    top: 0vh;
-    justify-content: center;
-    flex-direction: row;
-    width: 96vw;
-    height: calc(4vw + 67);
-    margin: 12px auto;
-    padding: 2px 0px;
-    background-color: rgb(15, 12, 23);
-    color: rgb(26, 189, 26);
-    border-radius: 3px;
-}
-.hidden {
-    display: none !important;
-}
-.tab {
-    box-sizing: border-box;
-    display: flex;
-    width: 24%;
-    height: 85%;
-    justify-content: center;
-    align-items: center;
-    margin: 7px 0px;
-    border: 2px solid rgb(26, 189, 26);
-    text-align: center;
-}
-        /* accounting for doubled up middle tab separators */
-#news {
-    border-left: 4px solid rgb(26, 189, 26);
-}
-#comical_dude {
-    border-right: 4px solid rgb(26, 189, 26);
-}
-        /* back to formatting */
-.tab_content {
-    justify-self: center;
-    text-align: center;
-    width: 60%;
-    font-size: 3vw;
-}
-.tab:hover {
-    background-color: rgba(38, 1, 79, 0.371);
-}
-.tab_link {
-    color:rgb(26, 189, 26);
-    text-decoration: none;
-    text-align: center;
-}
-.tab_link:visited {
-    color:rgb(26, 189, 26);
-}
-.tab_link:hover {
-    border-bottom: 2px dashed rgb(104, 5, 251);
-    border-radius: 1px;
-    color:rgb(18, 182, 18);
-}
-.mobile_only {
-    display: none;
-}
-
-
-
 /* content backdrop */
 #content_backdrop {
     box-sizing: border-box;
@@ -125,7 +59,6 @@ footer {
     background-color: rgb(25, 20, 39);
     border-radius: 3px;
 }
-
 
     /* content div */
 .content_div {
@@ -180,20 +113,10 @@ footer {
     align-self: center;
     font-size: calc(1vw + 1vh);
 }
-    /* a elements */
-a {
-    color: rgb(26, 189, 26);
-}
-a:visited {
-    color: rgb(26, 189, 26);
-}
-a:hover {
-    color: rgb(26, 189, 26);
-    border-bottom: 1px solid rgb(26, 189, 26);
-}
 
-
-
+.mobile_only {
+    display: none;
+}
 
 /* Mobile Dev */
 @media screen and (max-width: 768px) {
@@ -208,30 +131,31 @@ a:hover {
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
+        height: 50px;
     }
 
     #menu_bar {
-        align-self: flex-start;
-        flex-direction: column;
-        width: 60vw;
-        height: auto;
-        padding: 8px 0;
-        margin: 0 0 0 0;
+        align-self: flex-start !important;
+        flex-direction: column !important;
+        width: 60vw !important;
+        height: auto !important;
+        padding: 8px 0 !important;
+        margin: 0 0 0 0 !important;
     }
 
     .tab {
-        width: 90%;
-        height: auto;
-        margin: 6px 0;
-        padding: 8px;
+        width: 90% !important;
+        height: auto !important;
+        margin: 6px 0 !important;
+        padding: 8px !important;
     }
 
     .tab_content {
-        font-size: 1.2rem;
-        width: 100%;
+        font-size: 1.2rem !important;
+        width: 100% !important;
     }
 
     #top_spacer {
-        display: none;
+        display: none !important;
     }
 }
