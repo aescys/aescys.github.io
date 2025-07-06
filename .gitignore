@@ -1,0 +1,67 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+Icon?
+._*
+
+# Node modules (if you're using npm/yarn)
+node_modules/
+
+# Dependency directories
+bower_components/
+
+# Build output
+dist/
+build/
+
+# VS Code settings
+.vscode/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+log/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Compiled files
+*.log
+*.tmp
+*.swp
+*.lock
+
+# Sass / Less cache
+.sass-cache/
+.cache/
+
+# Next.js / Nuxt / Gatsby / etc.
+.next/
+.nuxt/
+out/
+.cache/
+
+# Static site generator files
+.jekyll-cache/
+.jekyll-metadata
+
+# IDE project files
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Git backups
+*.orig
+
+# Optional: ignore any zipped files or backups
+*.zip
+*.tar.gz
+*.bak
+*.old
