@@ -158,13 +158,13 @@ a:hover {
 
 
 .mobile_only {
-    display: none;
+    display: none !important;
 }
 
 /* Mobile Dev */
 @media screen and (max-width: 768px) {
     .mobile_only {
-        display: auto;
+        display: block !important;
     }
     .desktop_only {
         display: none;
