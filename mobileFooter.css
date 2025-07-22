@@ -1,0 +1,31 @@
+#page_content {
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 0vw;
+    width: 98vw;
+    height: 250px;
+    border-radius: 3px;
+    color: white;
+}
+
+.footer_section {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    width: 18%;
+}
+
+#page_content p {
+    margin: .25em;
+}
+
+#page_content .header {
+    margin: .7em .25em;
+}
+
+#footer_end_section {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    width: 46%;
+}

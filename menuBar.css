@@ -57,5 +57,12 @@
     border-radius: 1px;
     color:rgb(18, 182, 18);
 }
+#mobile_menu_dropdown:hover {
+        background-color: rgb(23, 162, 23);
+        font-size: 14px;
+}
+#mobile_menu_dropdown.inverted:hover {
+    background-color: rgba(20, 5, 38) !important;
+}
 
 
