@@ -29,6 +29,7 @@ main {
     background-color: rgb(25, 20, 39);
     padding-bottom: 15px;
     border-radius: 3px;
+    height: fit-content;
 }
 #top_spacer {
     height: 17vh;
@@ -53,11 +54,36 @@ main {
 
     /* footer */
 footer {
+    display: flex;
+    flex-direction: row;
     margin: 2vh 0vw;
     width: 98vw;
     height: 250px;
     background-color: rgb(25, 20, 39);
     border-radius: 3px;
+    color: white;
+}
+
+.footer_section {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    width: 18%;
+}
+
+footer p {
+    margin: .25em;
+}
+
+footer .header {
+    margin: .7em .25em;
+}
+
+#footer_end_section {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    width: 46%;
 }
 
     /* content div */
@@ -114,13 +140,37 @@ footer {
     font-size: calc(1vw + 1vh);
 }
 
+/* General Elements */
+a {
+    color: rgb(26, 189, 26);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(26, 189, 26);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(26, 189, 26);
+    text-decoration: underline;
+}
+
+
 .mobile_only {
-    display: none;
+    display: none !important;
 }
 
 /* Mobile Dev */
 @media screen and (max-width: 768px) {
     .mobile_only {
+        display: block !important;
+    }
+    .desktop_only {
+        display: none;
+    }
+
+    #mobile_menu_dropdown {
         display: block;
         position: fixed;
         top: 10px;
@@ -132,6 +182,11 @@ footer {
         border: none;
         border-radius: 5px;
         height: 50px;
+    }
+    #mobile_menu_dropdown.inverted {
+        background-color: black;
+        color: rgb(26, 189, 26);
+        border: 3px solid rgb(26, 189, 26)
     }
 
     #menu_bar {
