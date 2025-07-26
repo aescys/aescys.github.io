@@ -1,1 +1,40 @@
 /* MATH.HTML SPECIFIC */
+#math_intro {
+    margin: 2em;
+    color: rgb(255, 255, 255);
+}
+#display_one {
+    display: flex;
+    flex-direction: row;
+    width: 66vw;
+    height: 750px;
+}
+#graph_display {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+    width: 50%;
+    height: 100%;
+    padding: 0 10px 0 0;
+}
+#calculator_one {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    height: 40%;
+}
+#calculator_two {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    height: 40%;
+}
+#calculator_one_description {
+    width: 50%;
+    height: 100%;
+}
+h2 {
+    color: rgb(26, 189, 26);
+}
