@@ -18,6 +18,7 @@ window.addEventListener('resize', updateMenuBarVisibility);
 
 document.getElementById("mobile_menu_dropdown").addEventListener('click', function () {
     document.getElementById("menu_bar").classList.toggle("hidden");
+    document.getElementById("mobile_menu_dropdown").classList.toggle("inverted");
 });
 
 //TAB CLICK REDIRECT BACKEND
@@ -38,6 +39,9 @@ function executeLink(event) {
     }
     else if (tabClicked.id == "comic") {
         window.location.href = "comic.html";
+    }
+    else if (tabClicked.id == "footer_tab") {
+        window.location.href = "mobileFooter.html";
     }
 }
 
