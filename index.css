@@ -82,7 +82,7 @@
     text-decoration: none;
 }
 #cha-ching:visited {
-    color: rrgb(240, 228, 97);
+    color: rgb(240, 228, 97);
 }
 #cha-ching:hover {
     text-decoration: none !important;
