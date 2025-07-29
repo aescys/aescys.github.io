@@ -112,15 +112,6 @@ footer .header {
     width: 68vw; 
     height: 74vh;
 }
-.content_div h1 {
-    color: rgb(255, 255, 255);
-}
-.content_div p {
-    color: rgb(232, 228, 228);
-}
-.content_div li {
-    color: white;
-}
         /* subject */
 .subject {
     grid-column-start: 2;
