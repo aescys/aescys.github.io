@@ -11,6 +11,12 @@ var graphOne = Desmos.GraphingCalculator(domPair1, {
   border: false,            // Optional: removes border
   lockViewport: false        // Prevents user from zooming/panning
 });
+graphOne.setMathBounds({
+  left: -5,
+  right: 5,
+  bottom: -5,
+  top: 5
+});
 graphOne.setExpression({ id: 'graph1', latex: 'y=\\sin(1/x)' });
 
 var domPair2 = document.getElementById('calculator_two');
@@ -24,8 +30,8 @@ var graphTwo = Desmos.GraphingCalculator(domPair2, {
   lockViewport: false        // Prevents user from zooming/panning
 });
 graphTwo.setMathBounds({
-  left: -1.4,
-  right: 1.4,
+  left: -0.35,
+  right: 0.35,
   bottom: -1.4,
   top: 1.4
 });

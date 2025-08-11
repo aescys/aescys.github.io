@@ -31,9 +31,6 @@ main {
     border-radius: 3px;
     height: fit-content;
 }
-#top_spacer {
-    height: 17vh;
-}
 
 /* content backdrop */
 #content_backdrop {

@@ -1,4 +1,7 @@
 /* MATH.HTML SPECIFIC */
+#top_spacer {
+    height: 7vh;
+}
 #math_intro {
     margin: 2em;
     color: rgb(255, 255, 255);
@@ -34,7 +37,33 @@
 #calculator_one_description {
     width: 50%;
     height: 100%;
+    color: rgb(255, 255, 255);
 }
+.rainbow {
+    background: linear-gradient(
+      90deg,
+      red,
+      orange,
+      yellow,
+      lime,
+      cyan,
+      blue,
+      violet,
+      red
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    animation: rainbowScroll 3s linear infinite;
+
+    transition: transform 0.2s ease;
+}
+  @keyframes rainbowScroll {
+    0%   { background-position: 0% center; }
+    100% { background-position: -200% center; }
+  }
 h2 {
     color: rgb(26, 189, 26);
 }
