@@ -97,6 +97,7 @@ a:visited {
 a:hover {
     color: rgb(26, 189, 26);
     text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 
