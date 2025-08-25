@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="siteWide.css">
         <link rel="stylesheet" href="menuBar.css">
-        <link rel="stylesheet" href="math.css">
+        <link rel="stylesheet" href="code.css">
     </head>
     <body>
         <main>
@@ -29,22 +29,29 @@
                         <h1 class="tab_content"><a href="mobileFooter.html" class="tab_link">Info</a></h1>
                     </div>
                 </div>
-                <div id="top_spacer">
-                </div>
-                <div id="math_intro">
-                    <p>This is the <a class="rainbow">mathematics</a> section of the site. This area is designated for functions or concepts I come accross that strike me as particularly interesting, insightful.</p>
-                    <p>I am currently relearning Calculus One and Two, so for now those will be the main realms of mathematics featured here. In time though, I will be learning Discrete Mathematics and eventually even Linear Algebra, so you can expect subjects from those matters to appear here as well.</p>
-                </div>
-                <div class="content_div" id="display_one">
-                    <div id="graph_display">
-                        <h2>Graph of sin(1/x)</h2>
-                        <div id="calculator_one"></div>
-                        <div id="calculator_two"></div>
+                <div id="top_spacer"></div>
+                <div id="content_window">
+                    <div id="content_selector">
+                        <!-- <p><a id="1180Content">WSU CS 1180 Content</a></p>
+                        <p><a id="2200Content">WSU CS 2200 Content</a></p> -->
+                        <p><a id="programContent">Program Displays</a></p>
                     </div>
-                    <div id="calculator_one_description"> 
-                        <p>This is a sinusoidal function, sin(1/x), and while many of its kind are interesting, this one provides a particularly wonderful prospect as you think towards determining its state as it approaches zero.</p>
-                        <p>The interesting thing about this function is that as it approaches zero, it oscilates faster and faster, and that is truly not to be discounted. This aspect of it means that as it approaches zero this function becomes infinitely more dense, never as dense as a solid line, yet still ever increasing. It brings to mind for me astronomy, and the gravitational properties of a black hole. Anywho, because of this ever increasing oscillation the value it possesses as it approaches zero is undetermined, undefined. Its limit as it approaches zero, is undefined. It could be in a number of states, those familiar with the behavior of sinusoidal functions at zero may be able to imagine a few, but ultimately it is unknown, and it is this suspense of state that makes the function so interesting.</p>
-                        <p>Some may imagine this functions value at zero as nonexistent, something unobtainable, impossible, unworthy of mention. I don't believe in the state of dissapation though, atleast not on this matter. The function must possess some value as it approaches 0, as all non-zero inputs produce result. So then, what does this function look like just as it finally reaches that axis, as the infinite oscillation is just behind or in front of the frame. That is the interest of this equation.</p>
+                    <div id="content">
+                        <div id="prog1">
+                            <hr>
+                            <h1>Mouse Tracker Program</h1>
+                            <div id="mouseTracker">
+                                <div class="line">
+                                    <h2>X Position: </h2>
+                                    <h2 id="xPos"></h2>
+                                </div>
+                                <div class="line">
+                                    <h2>Y Position: </h2>
+                                    <h2 id="yPos"></h2>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,8 +79,7 @@
                 <p><a href="https://github.com/yt-dlp/yt-dlp.git">yt-dlp</a>, cli video downloading kit</p>
             </div>
         </footer>
-        <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
         <script src="scripts/main.js"></script>
-        <script src="scripts/math.js"></script>
+        <script src="scripts/code.js"></script>
     </body>
 </html>

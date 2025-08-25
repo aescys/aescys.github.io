@@ -1,0 +1,30 @@
+#top_spacer {
+    height: 12vh;
+}
+#content_window {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+#content_selector {
+    width: 30%;
+    padding: 2em;
+    color: white;
+}
+#content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    color: white;
+}
+.line {
+    display : flex;
+    flex-direction: row;
+    gap: 6em;
+}
+hr {
+    color: rgb(26, 189, 26);
+}
