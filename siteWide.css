@@ -83,51 +83,6 @@ footer .header {
     width: 46%;
 }
 
-    /* content div */
-.content_div {
-    display: grid;
-    overflow: scroll;
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-columns: repeat(20, 1fr);
-    width: 66vw;
-    height: 54vh;
-    margin: 1vh 3vw;
-    padding: 1vh 2vw;
-    background-color: rgb(25, 20, 39);
-    border: 2px dashed rgb(26, 189, 26);
-    border-radius: 3px;
-}
-.enlarged {
-    width: 68vw; 
-    height: 74vh;
-}
-.content_div:hover {
-    width: 68vw;
-    height: 56vh;
-}
-.content_div.enlarged:hover {
-    width: 68vw; 
-    height: 74vh;
-}
-        /* subject */
-.subject {
-    grid-column-start: 2;
-    grid-column-end: 8;
-    grid-row-start: 4;
-    grid-row-end: 8;
-    align-self: center;
-    font-size: calc(1vw + 1vh);
-}
-        /* descriptor */
-.descriptor {
-    grid-column-start: 9;
-    grid-column-end: 20;
-    grid-row-start: 3;
-    grid-row-end: 9;
-    align-self: center;
-    font-size: calc(1vw + 1vh);
-}
-
 /* General Elements */
 a {
     color: rgb(26, 189, 26);
