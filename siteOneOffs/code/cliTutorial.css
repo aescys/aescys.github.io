@@ -28,16 +28,17 @@ main {
 h1 {
     padding: 1em;
     color: rgb(26, 189, 26);
-    border: 3px solid rgb(255, 0, 217);
+    border-bottom: 3px solid rgb(188, 6, 161);
+    border-radius: 2px;
 }
 h2 {
-    color: rgb(81, 94, 151);
+    color: rgb(117, 136, 219);
 }
 #green {
     color: rgb(26, 189, 26);
 }
 h3 {
-    color: rgb(81, 94, 151);
+    color: rgb(117, 136, 219);
 }
 p {
     color: rgb(255, 255, 255);
