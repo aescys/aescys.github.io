@@ -11,7 +11,7 @@ document.getElementById("1180Content").addEventListener('click', (event) => {
         </div>
         <h2>CLI Tutorial</h2>
         <div id="cli_tutorial">
-            <p>WIP: Expect within 24 hours</p>
+            <p>The Command Line Interface, CLI, is a way of navigating through and controlling your device using only words or tokens in the form of commands. It is an essential tool for every type of computer scientist, and it's the first step towards technical finesse. Joking, obviously. Find the tutorial <a href="siteOneOffs/code/cliTutorial.html" target="_blank">here</a>.</p>
         </div>
         <h2>Installing Java's Toolkit</h2>
         <div id="java_install">
