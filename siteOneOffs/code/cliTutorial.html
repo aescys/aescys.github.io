@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="cliTutorial.css">
+    </header>
+    <body>
+        <main>
+            <h1>The AesPlaes Command Line Interface Tutorial!</h1>
+            <p>I'm the author of this tutorial, and the developer of the AesPlaes site, Jaesen. When I first began programming, I was well able to follow the steps and memorize the rules of writing a good program. I knew mathematics, I was familiar with and appreciative of a good procedural approach to things, I still struggled really hard at the start of my course though, I didn't know computers. I write this tutorial as a hopes of helping some of you similarly positioned individuals find success in your computer programming course.</p>
+            <h2>I'll begin here - What is a command line interface, and how is it related to a computers filesystem?</h2>
+            <p>Straight to the point, a command line interface is essentially just a text log that you can use to run commands, which tell your computer what to do. It is used for many, many things - software development, network engineering, version control, video editing, music downloading - if you can think of an operation to be done on a computer there is likely a way to do it with the command line interface. The best introduction to the CLI though, and the one most central to it, is filesystem operations.</p>
+            <p>Filesystem operations are the everyday things you do with your computers mouse like enter a folder, move, rename, delete, copy a file, open a file. While these all sounds rather plain as described here, doing them through the command line invites a whole new atmosphere. Where before you were observing all from a cool distance, you are now in the meat of the motion along side the computer, feeling more weight to each creation and navigation. Each operating system has it's own command line interface and commands, but these navigational commands are often shared and will be the main topic addressed here.</p>
+            <h2>Where can I find my devices CLI?</h2>
+            <p>On Windows you have two options, the application CMD - Command Prompt, and the application PowerShell. For this tutorial, it is recommended to use Command Prompt</p>
+            <p class="subtext">Note: Windows also has the option to use the Windows Subsystem for Linux (WSL) which can create a smoother, less halted feeling environment.</p>
+            <p>On Linux, your app name may vary depending on your particular distro, but it is likely called Terminal</p>
+            <p>On macOS, you've got Terminal</p>
+            <p>As mentioned, in the context of this tutorial the three all have similar commands, but it is worth noting that macOS and Linux share the most similarities. Devices operating on either of these OS's are often referred to in tandem as "unix" devices.</p>
+            <h2>The important part, Commands for your command line interface</h2>
+            <p>Now that you've got the basic understanding of what a command line interface is and where to find it, let's get you familiar with some commands. Try opening your app and running these as you go along.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unix Devices</th>
+                        <th>Windows</th>
+                        <th>Usage Example</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a class="highlighty">pwd</a></td>
+                        <td><a class="highlighty">cd</a></td>
+                        <td>pwd  &lt;enter&gt; , cd  &lt;enter&gt;</td>
+                        <td>Shows the path of the directory you are currently working from</td>
+                    </tr>
+                    <tr>
+                        <td><a class="highlighty">ls</a></td>
+                        <td><a class="highlighty">dir</a></td>
+                        <td>ls &lt;enter&gt;</td>
+                        <td>Lists the contents of your active directory</td>
+                    </tr>
+                    <tr>
+                        <td><a class="highlighty">cd</a></td>
+                        <td><a class="highlighty">cd</a></td>
+                        <td>cd otherDirectory</td>
+                        <td>Changes your working folder to the specified one</td>
+                    </tr>
+                     <tr>
+                        <td><a class="highlighty">mv</a></td>
+                        <td><a class="highlighty">move</a></td>
+                        <td>mv file.txt homework1.txt</td>
+                        <td>Renames file.txt to be homework1.txt</td>
+                    </tr>                   
+                    <tr>
+                        <td><a class="highlighty">mv</a></td>
+                        <td><a class="highlighty">move</a></td>
+                        <td>mv file.txt projects</td>
+                        <td>Moves file.txt into the projects folder</td>
+                    </tr>
+                    <tr>
+                        <td><a class="highlighty">mkdir, md</a></td>
+                        <td><a class="highlighty">mkdir, md</a></td>
+                        <td>mkdir foo</td>
+                        <td>Makes a new folder named foo</td>
+                    </tr>
+                    <tr>
+                        <td><a class="highlighty">rm</a></td>
+                        <td><a class="highlighty">del</a></td>
+                        <td>rm file.txt</td>
+                        <td><a class="highlightr">Deletes</a> file.txt, with no preservation. CAN NOT be undone. Use caution, don't test your limits.</td>
+                    </tr>
+                    <tr>
+                        <td><a class="highlighty">cp</a></td>
+                        <td><a class="highlighty">copy</a></td>
+                        <td>cp file.txt projects/</td>
+                        <td>Makes a copy of file.txt inside the projects folder</td>
+                    </tr>
+                    <tr>
+                        <td><a class="highlighty">touch</a></td>
+                        <td><a class="highlighty">type nul &gt;</a></td>
+                        <td>touch bar.txt , type nul &gt; bar.txt</td>
+                        <td>Creates a file of type .txt named bar. This can be used to create an empty file of any extension type.</td>
+                    </tr>
+                    <tr>
+                        <td><a class="highlighty">open</a></td>
+                        <td><a class="highlighty">start</a></td>
+                        <td>open bar.txt , start bar.txt</td>
+                        <td>Launches the selected file with your computers default application to open it.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Note "<a class="highlighty">.</a>"  "<a class="highlighty">..</a>" "<a class="highlighty">~</a>" and "<a class="highlighty">/</a>" ("<a class="highlighty">\</a>" on windows) all symbolize special locations on your device. Try using them as the location in your cd command.</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <h2 id="green">Some exercises to try out</h2>
+            <h3>Excercise One</h3>
+            <p>Commands used: <a class="highlighty">ls</a>, <a class="highlighty">cd</a>, <a class="highlighty">touch</a>(<a class="highlighty">type nul &gt;</a>),<a class="highlighty">mkdir</a>, <a class="highlighty">mv</a></p>
+            <ol>
+                <li>Open your command line application and use cd and ls (dir for windows) in combination to find your way to your desktop folder.</li>
+                <li>Create a new folder using mkdir or md. Name it whatever you want</li>
+                <li>Create a new file using touch or type nul &gt;, also name it however you'd like. Remember, unix vs windows</li>
+                <li>Move the file into your newly created folder using mv or move</li>
+                <li>Navigate into the new folder and verify the operation was a success by running ls or dir - if you see your files name indicated in the content list of the folder you have succeeded</li>
+            </ol>
+            <h3>Excercise Two</h3>
+            <p>Commands used: <a class="highlighty">touch</a>(<a class="highlighty">type nul &gt;</a>), <a class="highlighty">cp</a>(<a class="highlighty">copy</a>), <a class="highlighty">rm</a>(<a class="highlighty">del</a>), <a class="highlighty">open</a>(<a class="highlighty">start</a>), <a class="highlighty">echo</a></p>
+            <ol>
+                <li>Navigate to your desktop folder</li>
+                <li>Create a file called test.txt</li>
+                <li>Run the command - echo "hello from test" &gt; test.txt</li>
+                <li>Create a copy of the file on your desktop, naming the file test2.txt</li>
+                <li>Open the copied file using open or start if you're on windows</li>
+                <li>Delete (warning) the copied file making sure to provide the correct filename (rm test2.txt, del test2.txt)</li>
+                <li>Check your trashcan, note that the deleted file is not present there</li>
+            </ol>
+            <p><a class="highlightr">Bonus</a>: On mac you can use "<a class="highlighty">rm -rf folderName</a>" to delete a folder, and on windows you can use "<a class="highlighty">rmdir /s folderName</a>". Note again, this can be incredibly consequential, do not test these commands out on directories crucial to your devices operating system. Typically important files are anything above the user level directory ("~" on mac)</p>
+            <p>Don't forget to try running "<a class="highlighty">cd ..</a>" or "<a class="highlighty">cd /</a>". These character represent, respectively, the parent directory of the folder you are in and the root of your computer's drive. "<a class="highlighty">.</a>" Represents your current folder. It's useful for things like "<a class="highlighty">open .</a>", "<a class="highlighty">start .</a>"".</p>
+            <h2>Sum</h2>
+            <p>That's all I've got, note there are many many other commands. In this you have learned the core navigational commands of both unix and windows systems. From this you will be able to better structure programs and interact with your computer. It was not displayed in this tutorial, but the command line interface is incredibly useful for downloading software packages, that capability will be displayed in the Java Developer Kit install tutorial coming to the site soon. Have a good go at it.</p>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
