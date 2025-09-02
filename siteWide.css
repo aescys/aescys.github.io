@@ -105,7 +105,7 @@ a:hover {
     display: none !important;
 }
 
-/* Mobile Dev */
+/* Mobile Dev 
 @media screen and (max-width: 768px) {
     .mobile_only {
         display: block !important;
