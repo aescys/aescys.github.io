@@ -24,7 +24,9 @@
 # <span style="color: maroon">Index</span>
 
 # <span style="color: green">Code</span>
- begin carving out a format for the function displays to follow, practice with Mouse Tracker
+ add the fisher-yates shuffle in java as a function display, noting its subtlety in achieving randomness
+
+ Carve out a format for the function displays to follow, practice with Mouse Tracker
  ### Key Points
   - Contain a live visual demonstration of the function being displayed
   - Contain a brief description of the function and what is does
